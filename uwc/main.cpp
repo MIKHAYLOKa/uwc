@@ -9,8 +9,7 @@ int main(int argc, char* argv[]) {
     }
    
     try {
-        UniqueWordsHelper wordsManager;
-        auto result = wordsManager.processFile(argv[1]);
+        auto result = UniqueWordsHelper::processFile(argv[1]);
         std::cout << "Amount of unique words: " << result.words.size() << std::endl;
         std::cout << "Process time: " << result.processTime.count() << std::endl;
     }
